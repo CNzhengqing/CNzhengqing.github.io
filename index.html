@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fireworks Explosion</title>
+    <style>
+        body {
+            background-color: black;
+            overflow: hidden;
+        }
+        
+        #fireworks {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        #text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: white;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="fireworks"></div>
+    <div id="text">Your Text Here</div>
+
+    <script>
+        // 烟花爆炸效果的 JavaScript 代码
+        function createFirework() {
+            // 创建烟花元素
+            var firework = document.createElement('div');
+            firework.className = 'firework';
+            
+            // 设置烟花的初始位置和样式
+            firework.style.left = Math.random() * 100 + 'vw';
+            firework.style.top = Math.random() * 100 + 'vh';
+            
+            // 将烟花添加到页面中
+            document.getElementById('fireworks').appendChild(firework);
+            
+            // 在一段时间后移除烟花元素
+            setTimeout(function() {
+                firework.parentNode.removeChild(firework);
+            }, 2000);
+        }
+        
+        // 触发烟花爆炸效果
+        function startFireworks() {
+            // 显示文本效果
+            document.getElementById('text').style.display = 'block';
+
+            // 创建多个烟花
+            for (var i = 0; i < 10; i++) {
+                createFirework();
+            }
+        }
+
+        // 在页面加载完成后触发烟花效果
+        window.onload = function() {
+            startFireworks();
+        };
+    </script>
+</body>
+</html>
