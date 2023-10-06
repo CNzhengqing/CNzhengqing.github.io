@@ -87,7 +87,7 @@
 
 <body>
 <div class="cs">
-    <img src="剪刀手-甜-寝室.jpg" id="logo">
+    <img src="https://doc-10-2c-docs.googleusercontent.com/docs/securesc/1kn15do89hshrl7cts9lakkhoqaacgfv/oa9jb80n6gouqec3bkoqtifvqs3mslbu/1696587900000/11314612675622009627/08481714589410007774Z/1VMqYXpcQgOZyE8imVF6h06WCQqP4MzP9?e=download&uuid=cc003a86-ed29-48dd-a4ba-ce2a7cc5a05c" id="logo">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #ece8e9;">
@@ -573,9 +573,33 @@
         };
     }());
     S.init();
+
+//test
+
+    window.onload = function(){
+             setInterval("toggleSound()",100);
+             
+        }
+
+    function toggleSound() {
+                var music = document.getElementById("loop");//获取ID  
+                    
+                if (music.paused) { //判读是否播放  
+                    music.paused=false;
+                    music.play(); //没有就播放 
+                }    
+        }
+
+
+//
+
 </script>
-<audio autoplay="autoplay" loop="loop">
-    <source src="http://m10.music.126.net/20180509183512/5ae461e9a42675d782840bf139b05c60/ymusic/e492/ea7a/6a27/8799d19e52d9bbe3ae15febb03d7efdb.mp3" type="audio/mpeg">
+<!-- <audio autoplay="autoplay" loop="loop">
+    <source src="https://freetyst.nf.migu.cn/public/product9th/product46/2023/03/2117/2023%E5%B9%B402%E6%9C%8814%E6%97%A520%E7%82%B937%E5%88%86%E7%B4%A7%E6%80%A5%E5%86%85%E5%AE%B9%E5%87%86%E5%85%A5%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8421%E9%A6%96712638/%E6%AD%8C%E6%9B%B2%E4%B8%8B%E8%BD%BD/MP3_40_16_Stero/69919804698170025.mp3?Key=4d20fbb855a87f97&Tim=1696591679806&channelid=00&msisdn=c4268dd65e884eda970e33e855fc5899&CI=699198046982600919000008960075&F=000009" type="audio/mpeg">
+</audio> -->
+
+<audio preload autoplay loop id="loop">
+    <source src="https://freetyst.nf.migu.cn/public/product9th/product46/2023/03/2117/2023%E5%B9%B402%E6%9C%8814%E6%97%A520%E7%82%B937%E5%88%86%E7%B4%A7%E6%80%A5%E5%86%85%E5%AE%B9%E5%87%86%E5%85%A5%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8421%E9%A6%96712638/%E6%AD%8C%E6%9B%B2%E4%B8%8B%E8%BD%BD/MP3_40_16_Stero/69919804698170025.mp3?Key=4d20fbb855a87f97&Tim=1696591679806&channelid=00&msisdn=c4268dd65e884eda970e33e855fc5899&CI=699198046982600919000008960075&F=000009" type="audio/mpeg">
 </audio>
 </body>
 </html>
