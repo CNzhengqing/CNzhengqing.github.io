@@ -1,3 +1,3 @@
 # CNzhengqing.github.io
 Min
-妈° 
+山高路远 全凭良心
