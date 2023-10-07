@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>生日快乐！</title>
+    <title>汪汪汪生日快乐！</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--<meta itemprop="image" content="./images/fenxiang.png" />-->
     <style>
@@ -263,7 +263,7 @@
                     S.Drawing.init('.canvas');
                     document.body.classList.add('body--ready');
                     //想说的话
-                    S.UI.simulate("敏跑跑|生日快乐奥|#countdown 3|#rectangle 15x15|#circle 12 |#time");
+                    S.UI.simulate("汪思敏|生日快乐！|#countdown 3|#rectangle 15x15|#circle 12 |#time");
                     S.Drawing.loop(function () {
                         S.Shape.render();
                     });
@@ -728,7 +728,9 @@
 
         function toggleSound() {
             var music = document.getElementById("loop");//获取ID  
-
+            console.log("姐也会打开控制台吗？")
+            console.log("祝福姐")
+            console.log("祝好")
             if (music.paused) { //判读是否播放  
                 music.paused = false;
                 music.play(); //没有就播放 
